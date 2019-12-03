@@ -1,0 +1,42 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Date]
+       [dbo].[DrinkTable]
+       [dbo].[FoodTable]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column drink in table [dbo].[DrinkTable] is currently  CHAR (10) NOT NULL but is being changed to  CHAR (4)
+         NOT NULL. Data loss could occur.
+       The type for column drink in table [dbo].[EventTable] is currently  CHAR (10) NOT NULL but is being changed to  CHAR (4)
+         NOT NULL. Data loss could occur.
+       The type for column food in table [dbo].[EventTable] is currently  CHAR (10) NOT NULL but is being changed to  CHAR (4)
+         NOT NULL. Data loss could occur.
+       The type for column food in table [dbo].[FoodTable] is currently  CHAR (10) NOT NULL but is being changed to  CHAR (4)
+         NOT NULL. Data loss could occur.
+
+** User actions
+     Table rebuild
+       [dbo].[Date] (Table)
+       [dbo].[DrinkTable] (Table)
+       [dbo].[FoodTable] (Table)
+     Alter
+       [dbo].[EventTable] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_EventTable_Date] (Foreign Key)
+       [dbo].[FK_EventTable_DrinkTable] (Foreign Key)
+       [dbo].[FK_EventTable_FoodTable] (Foreign Key)
+     Create
+       [dbo].[FK_EventTable_Date] (Foreign Key)
+       [dbo].[FK_EventTable_DrinkTable] (Foreign Key)
+       [dbo].[FK_EventTable_FoodTable] (Foreign Key)
+
+The type for column drink in table [dbo].[DrinkTable] is currently  CHAR (10) NOT NULL but is being changed to  CHAR (4) NOT NULL. Data loss could occur.
+The type for column drink in table [dbo].[EventTable] is currently  CHAR (10) NOT NULL but is being changed to  CHAR (4) NOT NULL. Data loss could occur.
+The type for column food in table [dbo].[EventTable] is currently  CHAR (10) NOT NULL but is being changed to  CHAR (4) NOT NULL. Data loss could occur.
+The type for column food in table [dbo].[FoodTable] is currently  CHAR (10) NOT NULL but is being changed to  CHAR (4) NOT NULL. Data loss could occur.
+

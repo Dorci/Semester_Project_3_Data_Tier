@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Rename
+       [dbo].[Date].[DateId] (Column)
+       [dbo].[AddressTable].[AddressId] (Column)
+       [dbo].[DrinkTable].[drinkId] (Column)
+       [dbo].[EventTable].[AddressId] (Column)
+       [dbo].[EventTable].[DateId] (Column)
+       [dbo].[EventTable].[foodId] (Column)
+       [dbo].[EventTable].[drinkId] (Column)
+       [dbo].[EventTable].[descriptions] (Column)
+
+** Supporting actions

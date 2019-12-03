@@ -1,0 +1,27 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[AddressTable] (Table)
+       [dbo].[Date] (Table)
+       [dbo].[DrinkTable] (Table)
+       [dbo].[EventTable] (Table)
+       [dbo].[FoodTable] (Table)
+       [dbo].[User] (Table)
+       [dbo].[UserTable] (Table)
+       [dbo].[FK_EventTable_UserTable] (Foreign Key)
+       [dbo].[FK_EventTable_AddressTable] (Foreign Key)
+       [dbo].[FK_EventTable_Date] (Foreign Key)
+       [dbo].[FK_EventTable_FoodTable] (Foreign Key)
+       [dbo].[FK_EventTable_DrinkTable] (Foreign Key)
+       [dbo].[FK_UserTable_AddressTable] (Foreign Key)
+
+** Supporting actions

@@ -1,0 +1,49 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[EventTable]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column city in table [dbo].[AddressTable] is currently  NCHAR (10) NULL but is being changed to  VARCHAR
+         (50) NULL. Data loss could occur.
+       The type for column doorSide in table [dbo].[AddressTable] is currently  NCHAR (10) NULL but is being changed to 
+         VARCHAR (50) NULL. Data loss could occur.
+       The type for column postCode in table [dbo].[AddressTable] is currently  NCHAR (10) NULL but is being changed to  CHAR
+         (4) NULL. Data loss could occur.
+       The type for column street in table [dbo].[AddressTable] is currently  NCHAR (10) NULL but is being changed to  VARCHAR
+         (50) NULL. Data loss could occur.
+       The type for column streetNr in table [dbo].[AddressTable] is currently  NCHAR (10) NULL but is being changed to 
+         VARCHAR (50) NULL. Data loss could occur.
+       The column [dbo].[EventTable].[descriptions] is being dropped, data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[FoodTable].[foodId] (Column)
+     Alter
+       [dbo].[AddressTable] (Table)
+     Table rebuild
+       [dbo].[EventTable] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_EventTable_AddressTable] (Foreign Key)
+       [dbo].[FK_EventTable_UserTable] (Foreign Key)
+       [dbo].[FK_EventTable_Date] (Foreign Key)
+       [dbo].[FK_EventTable_DrinkTable] (Foreign Key)
+       [dbo].[FK_EventTable_FoodTable] (Foreign Key)
+     Create
+       [dbo].[FK_EventTable_AddressTable] (Foreign Key)
+       [dbo].[FK_EventTable_UserTable] (Foreign Key)
+       [dbo].[FK_EventTable_Date] (Foreign Key)
+       [dbo].[FK_EventTable_DrinkTable] (Foreign Key)
+       [dbo].[FK_EventTable_FoodTable] (Foreign Key)
+
+The type for column city in table [dbo].[AddressTable] is currently  NCHAR (10) NULL but is being changed to  VARCHAR (50) NULL. Data loss could occur.
+The type for column doorSide in table [dbo].[AddressTable] is currently  NCHAR (10) NULL but is being changed to  VARCHAR (50) NULL. Data loss could occur.
+The type for column postCode in table [dbo].[AddressTable] is currently  NCHAR (10) NULL but is being changed to  CHAR (4) NULL. Data loss could occur.
+The type for column street in table [dbo].[AddressTable] is currently  NCHAR (10) NULL but is being changed to  VARCHAR (50) NULL. Data loss could occur.
+The type for column streetNr in table [dbo].[AddressTable] is currently  NCHAR (10) NULL but is being changed to  VARCHAR (50) NULL. Data loss could occur.
+The column [dbo].[EventTable].[descriptions] is being dropped, data loss could occur.
+

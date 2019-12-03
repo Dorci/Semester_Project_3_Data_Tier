@@ -1,0 +1,89 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[AddressTable]
+       [dbo].[Date]
+       [dbo].[DrinkTable]
+       [dbo].[EventTable]
+       [dbo].[FoodTable]
+       [dbo].[User]
+       [dbo].[UserTable]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column AddressId in table [dbo].[AddressTable] is currently  CHAR (4) NOT NULL but is being changed to  INT
+         IDENTITY (1, 1) NOT NULL. Data loss could occur.
+       The type for column DateId in table [dbo].[Date] is currently  CHAR (4) NOT NULL but is being changed to  INT IDENTITY
+         (1, 1) NOT NULL. Data loss could occur.
+       The type for column day in table [dbo].[Date] is currently  NCHAR (10) NULL but is being changed to  NCHAR (2) NULL.
+         Data loss could occur.
+       The type for column month in table [dbo].[Date] is currently  NCHAR (10) NULL but is being changed to  NCHAR (1) NULL.
+         Data loss could occur.
+       The type for column drinkId in table [dbo].[DrinkTable] is currently  CHAR (4) NOT NULL but is being changed to  INT
+         IDENTITY (1, 1) NOT NULL. Data loss could occur.
+       The type for column addressId in table [dbo].[EventTable] is currently  CHAR (4) NOT NULL but is being changed to  INT
+         NOT NULL. Data loss could occur.
+       The type for column dateId in table [dbo].[EventTable] is currently  CHAR (4) NOT NULL but is being changed to  INT NOT
+         NULL. Data loss could occur.
+       The type for column drinkId in table [dbo].[EventTable] is currently  CHAR (4) NOT NULL but is being changed to  INT NOT
+         NULL. Data loss could occur.
+       The type for column eventId in table [dbo].[EventTable] is currently  CHAR (10) NOT NULL but is being changed to  INT
+         IDENTITY (1, 1) NOT NULL. Data loss could occur.
+       The type for column foodId in table [dbo].[EventTable] is currently  CHAR (4) NOT NULL but is being changed to  INT NOT
+         NULL. Data loss could occur.
+       The type for column userId in table [dbo].[EventTable] is currently  CHAR (4) NOT NULL but is being changed to  INT NOT
+         NULL. Data loss could occur.
+       The type for column foodId in table [dbo].[FoodTable] is currently  CHAR (4) NOT NULL but is being changed to  INT
+         IDENTITY (1, 1) NOT NULL. Data loss could occur.
+       The type for column UserID in table [dbo].[User] is currently  CHAR (4) NOT NULL but is being changed to  INT IDENTITY
+         (1, 1) NOT NULL. Data loss could occur.
+       The type for column addressId in table [dbo].[UserTable] is currently  CHAR (4) NULL but is being changed to  INT NULL.
+         Data loss could occur.
+       The type for column userId in table [dbo].[UserTable] is currently  CHAR (4) NOT NULL but is being changed to  INT
+         IDENTITY (1, 1) NOT NULL. Data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[EventTable].[descriptions] (Column)
+     Table rebuild
+       [dbo].[AddressTable] (Table)
+       [dbo].[Date] (Table)
+       [dbo].[DrinkTable] (Table)
+       [dbo].[EventTable] (Table)
+       [dbo].[FoodTable] (Table)
+       [dbo].[User] (Table)
+       [dbo].[UserTable] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_UserTable_AddressTable] (Foreign Key)
+       [dbo].[FK_EventTable_AddressTable] (Foreign Key)
+       [dbo].[FK_EventTable_Date] (Foreign Key)
+       [dbo].[FK_EventTable_DrinkTable] (Foreign Key)
+       [dbo].[FK_EventTable_UserTable] (Foreign Key)
+       [dbo].[FK_EventTable_FoodTable] (Foreign Key)
+     Create
+       [dbo].[FK_UserTable_AddressTable] (Foreign Key)
+       [dbo].[FK_EventTable_AddressTable] (Foreign Key)
+       [dbo].[FK_EventTable_Date] (Foreign Key)
+       [dbo].[FK_EventTable_DrinkTable] (Foreign Key)
+       [dbo].[FK_EventTable_UserTable] (Foreign Key)
+       [dbo].[FK_EventTable_FoodTable] (Foreign Key)
+
+The type for column AddressId in table [dbo].[AddressTable] is currently  CHAR (4) NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. Data loss could occur.
+The type for column DateId in table [dbo].[Date] is currently  CHAR (4) NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. Data loss could occur.
+The type for column day in table [dbo].[Date] is currently  NCHAR (10) NULL but is being changed to  NCHAR (2) NULL. Data loss could occur.
+The type for column month in table [dbo].[Date] is currently  NCHAR (10) NULL but is being changed to  NCHAR (1) NULL. Data loss could occur.
+The type for column drinkId in table [dbo].[DrinkTable] is currently  CHAR (4) NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. Data loss could occur.
+The type for column addressId in table [dbo].[EventTable] is currently  CHAR (4) NOT NULL but is being changed to  INT NOT NULL. Data loss could occur.
+The type for column dateId in table [dbo].[EventTable] is currently  CHAR (4) NOT NULL but is being changed to  INT NOT NULL. Data loss could occur.
+The type for column drinkId in table [dbo].[EventTable] is currently  CHAR (4) NOT NULL but is being changed to  INT NOT NULL. Data loss could occur.
+The type for column eventId in table [dbo].[EventTable] is currently  CHAR (10) NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. Data loss could occur.
+The type for column foodId in table [dbo].[EventTable] is currently  CHAR (4) NOT NULL but is being changed to  INT NOT NULL. Data loss could occur.
+The type for column userId in table [dbo].[EventTable] is currently  CHAR (4) NOT NULL but is being changed to  INT NOT NULL. Data loss could occur.
+The type for column foodId in table [dbo].[FoodTable] is currently  CHAR (4) NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. Data loss could occur.
+The type for column UserID in table [dbo].[User] is currently  CHAR (4) NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. Data loss could occur.
+The type for column addressId in table [dbo].[UserTable] is currently  CHAR (4) NULL but is being changed to  INT NULL. Data loss could occur.
+The type for column userId in table [dbo].[UserTable] is currently  CHAR (4) NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. Data loss could occur.
+
