@@ -46,6 +46,20 @@ namespace DataAccessLibary.BusnissLogic
             return (List<EveryEventRelated>)DBHelper.LoadData<EveryEventRelated>(sql);
         }
 
+        //public static bool accountExists(string emailAddress, string password)
+        //{
+        //    bool accountExists = false;
+        //    DataModell data = new DataModell
+        //    {
+        //        EmailAddress = emailAddress,
+        //        Password = password
+        //    };
+        //    string sql = @"SELECT dbo.UserTable.email, dbo.UserTable.passwordq from UserTable where dbo.UserTable.email = '@EmailAddress' and dbo.UserTable.passwordq = '@Password';";
+
+        //    if()
+            
+        //}
+
         //public static int CreateEventint(int eventId, int userId, struct address, struct date, struct food, struct drink, int startTime, int endTime, string description, int ageLimit, string pets, string entertainment, int guests, int welcomeFee)
         //{
         //    EventModel eData = new EventModel
