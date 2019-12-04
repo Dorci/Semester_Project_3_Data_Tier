@@ -73,7 +73,6 @@
     <Compile Include="Model\DataModell.cs" />
     <Compile Include="Model\EventModel.cs" />
     <Compile Include="Model\EveryEventRelated.cs" />
-    <Compile Include="Model\FoodModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -36,13 +36,10 @@ namespace DataAccessLibary.BusnissLogic
 
         public static List<EveryEventRelated> LoadEvent()
         {
-            string sql = @"SELECT dbo.UserTable.fName, dbo.UserTable.lName , dbo.AddressTable.city,dbo.AddressTable.street,dbo.AddressTable.streetNr,dbo.AddressTable.doorSide,dbo.AddressTable.postCode,dbo.Date.day,dbo.Date.month,dbo.Date.year,dbo.FoodTable.starter,dbo.FoodTable.mainCourse,dbo.FoodTable.dessert,dbo.DrinkTable.alcoholic,dbo.DrinkTable.nonAlcoholic,dbo.EventTable.startTime,dbo.EventTable.endTime,dbo.EventTable.descriptions,dbo.EventTable.ageLimit,dbo.EventTable.pets,dbo.EventTable.entertainment,dbo.EventTable.guests,dbo.EventTable.welcomeFee
+            string sql =    @"SELECT dbo.UserTable.fName, dbo.UserTable.lName , dbo.AddressTable.city,dbo.AddressTable.streeName,dbo.AddressTable.floor,dbo.AddressTable.block,dbo.AddressTable.flat,dbo.AddressTable.buildingNr,dbo.AddressTable.postalCode,dbo.EventTable.dateT,dbo.EventTable.starter,dbo.EventTable.mainCourse,dbo.EventTable.dessert,dbo.EventTable.alcoholicDrink,dbo.EventTable.startTime,dbo.EventTable.endTime,dbo.EventTable.description,dbo.EventTable.ageLimit,dbo.EventTable.pets,dbo.EventTable.entertainment,dbo.EventTable.MaxNoOfGuests,dbo.EventTable.entryFee
                             FROM dbo.EventTable
                             FULL OUTER JOIN dbo.UserTable ON dbo.EventTable.userId = dbo.UserTable.userId
-                            FULL OUTER JOIN dbo.AddressTable ON dbo.EventTable.AddressId = dbo.AddressTable.AddressId
-                            FULL OUTER JOIN dbo.Date on dbo.EventTable.DateId = dbo.Date.DateId
-                            FULL OUTER JOIN dbo.FoodTable on dbo.EventTable.foodId = dbo.FoodTable.foodId
-                            FULL OUTER JOIN dbo.DrinkTable on dbo.EventTable.drinkId = dbo.DrinkTable.drinkId;";
+                            FULL OUTER JOIN dbo.AddressTable ON dbo.EventTable.AddressId = dbo.AddressTable.AddressId";
             return (List<EveryEventRelated>)DBHelper.LoadData<EveryEventRelated>(sql);
         }
 
@@ -57,32 +54,56 @@ namespace DataAccessLibary.BusnissLogic
         //    string sql = @"SELECT dbo.UserTable.email, dbo.UserTable.passwordq from UserTable where dbo.UserTable.email = '@EmailAddress' and dbo.UserTable.passwordq = '@Password';";
 
         //    if()
-            
+
         //}
 
-        //public static int CreateEventint(int eventId, int userId, struct address, struct date, struct food, struct drink, int startTime, int endTime, string description, int ageLimit, string pets, string entertainment, int guests, int welcomeFee)
-        //{
-        //    EventModel eData = new EventModel
-        //    {
-        //       EventId = eventId,
-        //   UserId = userId,
-        // address = address, 
-        // Date = date, 
-        // Food = food, 
-        // Drink = drink, 
-        // StartTime = startTime, 
-        // EndTime = endTime,
-        // Description = description,
-        // AgeLimit = ageLimit, 
-        // Pets = pets,
-        // Entertainment = entertainment, 
-        // Guests = guests,
-        // WelcomeFee = welcomeFee
-        //    };
+        public static int CreateEventint(int userId,int addressId , string city, string streeName, int floor, string block, string flat, int buildingNr, int postalCode, DateTime dateT, string starter, string mainCourse, string dessert, bool alcoholicDrink, string startTime,string endTime, string description, int ageLimit, bool pets, bool entertainment, int MaxNoOfGuests, double entryFee)
+        {
+            EventModel eventData = new EventModel
+            {
+             UserId = userId,
+             AddressId = addressId,
+             AlcoholicDrink = alcoholicDrink,
+             StartTime = startTime,
+             EndTime = endTime,
+             Description = description,
+             AgeLimit = ageLimit,
+             Pets = pets,
+             Entertainment = entertainment,
+             MaximumNoOfGuests = MaxNoOfGuests,
+             EntryFee = entryFee,
+             Date = dateT,
+             Starter = starter,
+             MainCourse = mainCourse,
+             Dessert = dessert
+                
+            };
+
+            Address addressData = new Address
+            {
+                City = city,
+                StreeName = streeName,
+                Floor = floor,
+                Block = block,
+                Flat = flat,
+                BuildingNr = buildingNr,
+                PostalCode = postalCode
+
+
+            };
+
+            if(addressData != null )
+            {
+                string sql = @"INSERT INTO [dbo].[UserTable](FName, LName, email,dob,passwordq) VALUES ( @FirstName, @LastName, @EmailAddress, @Dob,@Password);";
+
+                return DBHelper.SaveData(sql, data);
+            }
+
+
 
         //string sql = @"INSERT INTO [dbo].[User](UserId,FirstName, LastName, EmailAddress,Age) VALUES (@UserId, @FirstName, @LastName, @EmailAddress, @Age);";
 
         //    return DBHelper.SaveData(sql, eData);
-        //}
+        }
     }
 }

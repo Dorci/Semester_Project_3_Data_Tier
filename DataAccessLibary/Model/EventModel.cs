@@ -8,21 +8,28 @@ namespace DataAccessLibary.Model
 {
     class EventModel
     {
-        
-        public int StartTime { get; set; }
+        public int UserId { get; set; }
+        public int AddressId { get; set; }
+        public DateTime Date { get; set; }
+        public string Starter { get; set; }
+        public string MainCourse { get; set; }
+        public string Dessert { get; set; }
+        public bool AlcoholicDrink { get; set; }
 
-        public int EndTime { get; set; }
+
+        public string StartTime { get; set; }
+
+        public string EndTime { get; set; }
         public string Description { get; set; }
         public int AgeLimit { get; set; }
-        public string Pets { get; set; }
-        
-        public string Entertainment { get; set; }
-        public int Guests { get; set; }
-        public int WelcomeFee { get; set; }
-        public DateTime datet { get; set; }
-       public bool alcoholic { get; set; }
+        public bool Pets { get; set; }
 
-        
+        public bool Entertainment { get; set; }
+        public int MaximumNoOfGuests { get; set; }
+        public double EntryFee { get; set; }
+       
+
+
 
     }
 }

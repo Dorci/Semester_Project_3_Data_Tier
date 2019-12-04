@@ -16,24 +16,22 @@ namespace DataAccessLibary.Model
         int StreetNr { get; set; }
         string DoorSide { get; set; }
         int PostCode { get; set; }
-        int Day { get; set; }
-        int Month { get; set; }
-        int Year { get; set; }
+        DateTime date { get; set; }
         string Starter { get; set; }
         string MainCourse { get; set; }
         string Dessert { get; set; }
         string Alcoholic { get; set; }
-        string NonAlciholic { get; set; }
+        
 
         public string StartTime { get; set; }
 
         public string EndTime { get; set; }
         public string Description { get; set; }
         public int AgeLimit { get; set; }
-        public string Pets { get; set; }
+        public Boolean Pets { get; set; }
 
-        public string Entertainment { get; set; }
+        public Boolean Entertainment { get; set; }
         public int Guests { get; set; }
-        public int WelcomeFee { get; set; }
+        public double entryFee { get; set; }
     }
 }

@@ -8,11 +8,13 @@ namespace DataAccessLibary.Model
 {
     class Address
     {
-        string City { get; set; }
-        string Street { get; set; }
-        int StreetNr { get; set; }
-        string DoorSide { get; set; }
-        int PostCode { get; set; }
+        public string City { get; set; }
+        public string StreeName { get; set; }
+       public int BuildingNr { get; set; }
+        public int Floor { get; set; }
+       public int PostalCode { get; set; }
+        public string Block { get; set; }
+        public string Flat{ get; set; }
 
     }
 }
