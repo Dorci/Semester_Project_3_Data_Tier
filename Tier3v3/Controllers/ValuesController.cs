@@ -15,18 +15,25 @@ namespace Tier3v3.Controllers
     {
         // GET api/values
         [HttpGet]
-       public ActionResult<IEnumerable<DataModell>> Get()
-       {
-             
-            return DBLogic.LoadUsers(); 
-       }
-
-        [HttpGet("test")]
-        public ActionResult<IEnumerable<DataModell>> GetTest()
+        public ActionResult<IEnumerable<DataModell>> Get()
         {
 
-            return Ok("hi");
+            return DBLogic.LoadUsers();
         }
+
+
+        [HttpGet("event")]
+        public ActionResult<IEnumerable<EveryEventRelated>> GetEvents()  
+        {
+            return DBLogic.LoadEvent();
+            }
+
+        //[HttpGet("test")]
+        //public ActionResult<IEnumerable<DataModell>> GetTest()
+        //{
+
+        //    return Ok("hi");
+        //}
 
         ////// GET api/values/5
         //[HttpGet("{id}")]
@@ -39,7 +46,7 @@ namespace Tier3v3.Controllers
         [HttpPost]
         public void Post([FromBody] DataModell data)
         {
-            DBLogic.CreateUser(data.FirstName, data.LastName, data.EmailAddress, data.Age);
+            DBLogic.CreateUser(data.FirstName, data.LastName, data.EmailAddress, data.Dob,data.Password);
         }
 
         // PUT api/values/5

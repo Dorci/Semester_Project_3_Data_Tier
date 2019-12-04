@@ -203,4 +203,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="dateId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="478f1784-4b9a-4e59-b476-0aa9026e33eb" ChangeDateTime="12/04/2019 11:37:46">
+    <Property Name="ElementName" Value="[dbo].[EventTable].[welcomeFee]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="entrzFee" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="75de40b4-8bfe-4851-8f74-c1eb27b4d635" ChangeDateTime="12/04/2019 11:37:54">
+    <Property Name="ElementName" Value="[dbo].[EventTable].[entrzFee]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="entryFee" />
+  </Operation>
 </Operations>
