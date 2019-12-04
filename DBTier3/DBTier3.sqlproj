@@ -60,15 +60,11 @@
     <Folder Include="dbo\Table" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Table\IUser.sql" />
-    <Build Include="dbo\Table\UserTable.sql" />
-    <Build Include="dbo\Table\EventTable.sql" />
-    <Build Include="dbo\Table\DateTable.sql" />
-    <Build Include="dbo\Table\FoodTable.sql" />
-    <Build Include="dbo\Table\AddressTable.sql" />
-    <Build Include="dbo\Table\DrinkTable.sql" />
+    <RefactorLog Include="DBTier3.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="DBTier3.refactorlog" />
+    <Build Include="dbo\Table\UserTable.sql" />
+    <Build Include="dbo\Table\AddressTable.sql" />
+    <Build Include="dbo\Table\EventTable.sql" />
   </ItemGroup>
 </Project>

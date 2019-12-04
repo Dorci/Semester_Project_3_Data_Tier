@@ -1,286 +1,286 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
-  <Operation Name="Rename Refactor" Key="030e90ea-d025-4338-a085-4637d4ec51ae" ChangeDateTime="11/15/2019 09:40:11">
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="030e90ea-d025-4338-a085-4637d4ec51ae" ChangeDateTime="11/15/2019 09:40:11" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[Id]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="UserID" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="92cb692e-1633-4f40-8ea0-bff25869d378" ChangeDateTime="11/15/2019 09:40:54">
+  <Operation Name="Rename Refactor" Key="92cb692e-1633-4f40-8ea0-bff25869d378" ChangeDateTime="11/15/2019 09:40:54" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[UserID]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="userID" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="5d42e47c-08ec-491c-8cdb-bbcd2c382a73" ChangeDateTime="11/15/2019 09:40:59">
+  <Operation Name="Rename Refactor" Key="5d42e47c-08ec-491c-8cdb-bbcd2c382a73" ChangeDateTime="11/15/2019 09:40:59" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[FirstName]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="firstName" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="55afb53e-d999-47c9-89ef-ec0d1268f356" ChangeDateTime="11/15/2019 10:02:42">
+  <Operation Name="Rename Refactor" Key="55afb53e-d999-47c9-89ef-ec0d1268f356" ChangeDateTime="11/15/2019 10:02:42" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[userID]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="UserID" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="a5529f86-f614-41af-9385-523b6966a6b7" ChangeDateTime="11/15/2019 10:02:50">
+  <Operation Name="Rename Refactor" Key="a5529f86-f614-41af-9385-523b6966a6b7" ChangeDateTime="11/15/2019 10:02:50" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[firstName]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="FirstName" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="1c5f4e2a-b163-42cb-b560-02e093cd1bb2" ChangeDateTime="11/15/2019 10:02:54">
+  <Operation Name="Rename Refactor" Key="1c5f4e2a-b163-42cb-b560-02e093cd1bb2" ChangeDateTime="11/15/2019 10:02:54" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[lastName]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LastName" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="828f1d16-534c-46d9-8f5a-d404f5ae8131" ChangeDateTime="11/15/2019 10:02:58">
+  <Operation Name="Rename Refactor" Key="828f1d16-534c-46d9-8f5a-d404f5ae8131" ChangeDateTime="11/15/2019 10:02:58" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[emailAddress]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="EmailAddress" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="0e45e8ea-3d20-4488-9900-20aae2ba8a58" ChangeDateTime="11/15/2019 10:03:03">
+  <Operation Name="Rename Refactor" Key="0e45e8ea-3d20-4488-9900-20aae2ba8a58" ChangeDateTime="11/15/2019 10:03:03" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[User].[age]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[User]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Age" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="e5469ddf-0360-4c5c-bf38-ac64a1da27ac" ChangeDateTime="11/27/2019 12:38:20">
+  <Operation Name="Rename Refactor" Key="e5469ddf-0360-4c5c-bf38-ac64a1da27ac" ChangeDateTime="11/27/2019 12:38:20" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[UserTable].[Id]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[UserTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="userId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="6c6d30a8-ae2c-4914-93a5-c8372c5119c1" ChangeDateTime="11/27/2019 12:40:10">
+  <Operation Name="Rename Refactor" Key="6c6d30a8-ae2c-4914-93a5-c8372c5119c1" ChangeDateTime="11/27/2019 12:40:10" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[AddressTable].[Id]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[AddressTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="address" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="2ad39fe9-7317-48e5-b7ae-75ae96020da3" ChangeDateTime="11/27/2019 12:44:43">
+  <Operation Name="Rename Refactor" Key="2ad39fe9-7317-48e5-b7ae-75ae96020da3" ChangeDateTime="11/27/2019 12:44:43" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[Id]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="eventId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="b3000d7d-7e7c-4cf1-9895-45d44de9e456" ChangeDateTime="11/27/2019 12:53:53">
+  <Operation Name="Rename Refactor" Key="b3000d7d-7e7c-4cf1-9895-45d44de9e456" ChangeDateTime="11/27/2019 12:53:53" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[Date].[Id]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[Date]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="date" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="d12fe1c3-21eb-4b76-aced-c226f0fa8d69" ChangeDateTime="11/27/2019 12:54:17">
+  <Operation Name="Rename Refactor" Key="d12fe1c3-21eb-4b76-aced-c226f0fa8d69" ChangeDateTime="11/27/2019 12:54:17" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[FoodTable].[Id]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[FoodTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="food" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="61abc38b-7532-4ce3-ba52-33a8ee6f8514" ChangeDateTime="11/27/2019 12:54:53">
+  <Operation Name="Rename Refactor" Key="61abc38b-7532-4ce3-ba52-33a8ee6f8514" ChangeDateTime="11/27/2019 12:54:53" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[DrinkTable].[Id]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[DrinkTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="drink" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="5618d69a-0570-4c4c-a0f1-8d5b9b07fb7e" ChangeDateTime="12/03/2019 06:39:27">
+  <Operation Name="Rename Refactor" Key="5618d69a-0570-4c4c-a0f1-8d5b9b07fb7e" ChangeDateTime="12/03/2019 06:39:27" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[AddressTable].[address]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[AddressTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Address" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="9f69f049-e50b-46f5-bd29-4d7eaf1af191" ChangeDateTime="12/03/2019 06:39:41">
+  <Operation Name="Rename Refactor" Key="9f69f049-e50b-46f5-bd29-4d7eaf1af191" ChangeDateTime="12/03/2019 06:39:41" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[address]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Address" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="11769fb0-f1bf-4cb5-821f-8a251468e463" ChangeDateTime="12/03/2019 06:39:53">
+  <Operation Name="Rename Refactor" Key="11769fb0-f1bf-4cb5-821f-8a251468e463" ChangeDateTime="12/03/2019 06:39:53" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[date]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Date" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="eb735151-7164-4510-b611-cd3419a123be" ChangeDateTime="12/03/2019 06:40:03">
+  <Operation Name="Rename Refactor" Key="eb735151-7164-4510-b611-cd3419a123be" ChangeDateTime="12/03/2019 06:40:03" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[Date].[date]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[Date]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="DateId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="ebd0230f-33be-4d0d-8ca5-f0b23b5158c0" ChangeDateTime="12/03/2019 06:51:38">
+  <Operation Name="Rename Refactor" Key="ebd0230f-33be-4d0d-8ca5-f0b23b5158c0" ChangeDateTime="12/03/2019 06:51:38" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[AddressTable].[Address]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[AddressTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="AddressId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="a3853f14-c594-424f-baf7-c3e74aa6d246" ChangeDateTime="12/03/2019 06:53:44">
+  <Operation Name="Rename Refactor" Key="a3853f14-c594-424f-baf7-c3e74aa6d246" ChangeDateTime="12/03/2019 06:53:44" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[Address]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="AddressId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="c2d42a53-4bdf-4e2b-b170-b14c12bc1288" ChangeDateTime="12/03/2019 06:53:49">
+  <Operation Name="Rename Refactor" Key="c2d42a53-4bdf-4e2b-b170-b14c12bc1288" ChangeDateTime="12/03/2019 06:53:49" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[Date]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="DateId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="33361b3d-31f3-4b08-9a0b-c25374e44f98" ChangeDateTime="12/03/2019 06:53:52">
+  <Operation Name="Rename Refactor" Key="33361b3d-31f3-4b08-9a0b-c25374e44f98" ChangeDateTime="12/03/2019 06:53:52" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[food]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="foodId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="e49194e3-0c38-4de2-a4a7-567c9e40a1bd" ChangeDateTime="12/03/2019 06:53:56">
+  <Operation Name="Rename Refactor" Key="e49194e3-0c38-4de2-a4a7-567c9e40a1bd" ChangeDateTime="12/03/2019 06:53:56" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[drink]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="drinkId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="28aeb674-2922-4ae2-81e7-8c4e62b579ea" ChangeDateTime="12/03/2019 06:54:12">
+  <Operation Name="Rename Refactor" Key="28aeb674-2922-4ae2-81e7-8c4e62b579ea" ChangeDateTime="12/03/2019 06:54:12" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[DrinkTable].[drink]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[DrinkTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="drinkId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="42891074-4f54-4641-9dd9-daee3d2ced40" ChangeDateTime="12/03/2019 06:54:18">
+  <Operation Name="Rename Refactor" Key="42891074-4f54-4641-9dd9-daee3d2ced40" ChangeDateTime="12/03/2019 06:54:18" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[FoodTable].[food]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[FoodTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="foodId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="fe69fd87-0c90-4699-8aa9-b2a6a7374803" ChangeDateTime="12/03/2019 06:54:33">
+  <Operation Name="Rename Refactor" Key="fe69fd87-0c90-4699-8aa9-b2a6a7374803" ChangeDateTime="12/03/2019 06:54:33" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[UserTable].[address]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[UserTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="addressId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="ad824447-8f35-4f5d-b9b9-f8474d44b82b" ChangeDateTime="12/03/2019 07:06:23">
+  <Operation Name="Rename Refactor" Key="ad824447-8f35-4f5d-b9b9-f8474d44b82b" ChangeDateTime="12/03/2019 07:06:23" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[description]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="descriptions" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="fdd5e641-cb60-4951-b96d-aca3f8bdb13e" ChangeDateTime="12/03/2019 07:08:49">
+  <Operation Name="Rename Refactor" Key="fdd5e641-cb60-4951-b96d-aca3f8bdb13e" ChangeDateTime="12/03/2019 07:08:49" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[AddressId]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="addressId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="10a2efb1-a781-4156-a2c5-cdf31c537f65" ChangeDateTime="12/03/2019 07:08:56">
+  <Operation Name="Rename Refactor" Key="10a2efb1-a781-4156-a2c5-cdf31c537f65" ChangeDateTime="12/03/2019 07:08:56" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[DateId]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="dateId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="478f1784-4b9a-4e59-b476-0aa9026e33eb" ChangeDateTime="12/04/2019 11:37:46">
+  <Operation Name="Rename Refactor" Key="478f1784-4b9a-4e59-b476-0aa9026e33eb" ChangeDateTime="12/04/2019 11:37:46" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[welcomeFee]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="entrzFee" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="75de40b4-8bfe-4851-8f74-c1eb27b4d635" ChangeDateTime="12/04/2019 11:37:54">
+  <Operation Name="Rename Refactor" Key="75de40b4-8bfe-4851-8f74-c1eb27b4d635" ChangeDateTime="12/04/2019 11:37:54" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[entrzFee]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="entryFee" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="4112e539-0390-4220-ad20-bd500f043933" ChangeDateTime="12/04/2019 14:23:09">
+  <Operation Name="Rename Refactor" Key="4112e539-0390-4220-ad20-bd500f043933" ChangeDateTime="12/04/2019 14:23:09" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[UserTable].[Id]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[UserTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="userId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="3840b1f0-55b8-410f-a86e-aeef279bfa5c" ChangeDateTime="12/04/2019 14:26:08">
+  <Operation Name="Rename Refactor" Key="3840b1f0-55b8-410f-a86e-aeef279bfa5c" ChangeDateTime="12/04/2019 14:26:08" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[AddressTable].[Id]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[AddressTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="AddressId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="eb6a66f1-61cd-4190-abfb-604f29a19069" ChangeDateTime="12/04/2019 14:31:19">
+  <Operation Name="Rename Refactor" Key="eb6a66f1-61cd-4190-abfb-604f29a19069" ChangeDateTime="12/04/2019 14:31:19" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[FoodTable].[Id]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[FoodTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="foodId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="eeabd2d7-d5c2-4d1e-b63b-310f8857cd0a" ChangeDateTime="12/04/2019 14:32:58">
+  <Operation Name="Rename Refactor" Key="eeabd2d7-d5c2-4d1e-b63b-310f8857cd0a" ChangeDateTime="12/04/2019 14:32:58" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[FoodTable].[maincourse]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[FoodTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="starter" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="fe8260c2-a1fb-4074-9a5c-6ba9361b3cf5" ChangeDateTime="12/04/2019 14:34:06">
+  <Operation Name="Rename Refactor" Key="fe8260c2-a1fb-4074-9a5c-6ba9361b3cf5" ChangeDateTime="12/04/2019 14:34:06" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[Id]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="eventId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="e4198108-4406-4597-bdff-513d342286e4" ChangeDateTime="12/04/2019 14:35:11">
+  <Operation Name="Rename Refactor" Key="e4198108-4406-4597-bdff-513d342286e4" ChangeDateTime="12/04/2019 14:35:11" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[Address]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="addressId" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="ef5071ba-5d2e-419d-878d-ad7f369f3b6b" ChangeDateTime="12/04/2019 14:42:57">
+  <Operation Name="Rename Refactor" Key="ef5071ba-5d2e-419d-878d-ad7f369f3b6b" ChangeDateTime="12/04/2019 14:42:57" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[drink]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="alcoholicDrink" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="a22d78c0-a28e-466e-b083-d7a8b8cc9392" ChangeDateTime="12/04/2019 14:46:54">
+  <Operation Name="Rename Refactor" Key="a22d78c0-a28e-466e-b083-d7a8b8cc9392" ChangeDateTime="12/04/2019 14:46:54" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[EventTable].[guests]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="MaxNoOfGuests" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="d5a09df1-175c-4337-b018-6ebd50567626" ChangeDateTime="12/04/2019 15:02:12">
+  <Operation Name="Rename Refactor" Key="d5a09df1-175c-4337-b018-6ebd50567626" ChangeDateTime="12/04/2019 15:02:12" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[FK_EventTable_ToTable]" />
     <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_EventTable_UserTable]" />
   </Operation>
-  <Operation Name="Rename Refactor" Key="1e5da4b6-bcca-4ebe-a85a-d38d8868e90e" ChangeDateTime="12/04/2019 15:03:15">
+  <Operation Name="Rename Refactor" Key="1e5da4b6-bcca-4ebe-a85a-d38d8868e90e" ChangeDateTime="12/04/2019 15:03:15" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
     <Property Name="ElementName" Value="[dbo].[FK_EventTable_ToTable_1]" />
     <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
     <Property Name="ParentElementName" Value="[dbo].[EventTable]" />
