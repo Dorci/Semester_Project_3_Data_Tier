@@ -12,7 +12,6 @@ namespace Tier3v4
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int eventId { get; set; }
-        public int myProperty { get; set; }
         public bool alcoholicDrink { get; set; }
         public string startTime { get; set; }
         public string endTime { get; set; }

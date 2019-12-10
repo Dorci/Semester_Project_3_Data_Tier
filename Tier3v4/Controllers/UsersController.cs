@@ -9,7 +9,7 @@ using Tier3v4;
 
 namespace Tier3v4.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Users")]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -41,7 +41,7 @@ namespace Tier3v4.Controllers
             return user;
         }
         [HttpGet("{email}")]
-        public async Task<ActionResult<User>> getUser(string email)
+        public async Task<ActionResult<User>> GetUser(string email)
         {
             var user = await data.Users.FindAsync(email);
             if (user == null)
@@ -52,11 +52,24 @@ namespace Tier3v4.Controllers
             }
             return user;
         }
+        //[HttpGet("{email}")]
+        //public async Task<ActionResult<User>> GetUserId(string email)
+        //{
+        //    var user = data.Users.Where(u => u.Equals(email)).Select(s=>s.userID);
+
+        //    if(email == null)
+        //    {
+        //        return NotFound();
+        //    }
+            
+        //    return (User)user;
+
+        //}
 
         // PUT: api/Users/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
-        [HttpPut("{id}")]
+        [HttpPut("{i}")]
         public async Task<IActionResult> PutUser(int id, User user)
         {
             if (id != user.userID)
@@ -88,7 +101,7 @@ namespace Tier3v4.Controllers
         // PUT: api/Users/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
-        [HttpPut("{email}")]
+        [HttpPut("{check}")]
         public async Task<IActionResult> PutUserByEmail(string email, User user)
         {
             if (email != user.email)
@@ -128,6 +141,7 @@ namespace Tier3v4.Controllers
 
             return CreatedAtAction("GetUser", new { id = user.userID }, user);
         }
+        
 
         
         // DELETE: api/Users/5
