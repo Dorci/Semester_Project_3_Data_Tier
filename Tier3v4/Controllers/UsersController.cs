@@ -13,31 +13,43 @@ namespace Tier3v4.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly Database _context;
+        private readonly Database data;
 
         public UsersController(Database context)
         {
-            _context = context;
+            data = context;
         }
 
         // GET: api/Users
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> Getusers()
         {
-            return await _context.users.ToListAsync();
+            return await data.Users.ToListAsync();
         }
 
         // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
-            var user = await _context.users.FindAsync(id);
+            var user = await data.Users.FindAsync(id);
 
             if (user == null)
             {
                 return NotFound();
             }
 
+            return user;
+        }
+        [HttpGet("{email}")]
+        public async Task<ActionResult<User>> getUser(string email)
+        {
+            var user = await data.Users.FindAsync(email);
+            if (user == null)
+            {
+                return NotFound();
+
+
+            }
             return user;
         }
 
@@ -52,15 +64,47 @@ namespace Tier3v4.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(user).State = EntityState.Modified;
+            data.Entry(user).State = EntityState.Modified;
 
             try
             {
-                await _context.SaveChangesAsync();
+                await data.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
                 if (!UserExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // PUT: api/Users/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
+        [HttpPut("{email}")]
+        public async Task<IActionResult> PutUserByEmail(string email, User user)
+        {
+            if (email != user.email)
+            {
+                return BadRequest();
+            }
+
+            data.Entry(user).State = EntityState.Modified;
+
+            try
+            {
+                await data.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!EmailExists(email))
                 {
                     return NotFound();
                 }
@@ -79,31 +123,36 @@ namespace Tier3v4.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
-            _context.users.Add(user);
-            await _context.SaveChangesAsync();
+            data.Users.Add(user);
+            await data.SaveChangesAsync();
 
             return CreatedAtAction("GetUser", new { id = user.userID }, user);
         }
 
+        
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<User>> DeleteUser(int id)
         {
-            var user = await _context.users.FindAsync(id);
+            var user = await data.Users.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
             }
 
-            _context.users.Remove(user);
-            await _context.SaveChangesAsync();
+            data.Users.Remove(user);
+            await data.SaveChangesAsync();
 
             return user;
         }
 
         private bool UserExists(int id)
         {
-            return _context.users.Any(e => e.userID == id);
+            return data.Users.Any(e => e.userID == id);
+        }
+        private bool EmailExists(string email)
+        {
+            return data.Users.Any(e =>e.email == email);
         }
     }
 }

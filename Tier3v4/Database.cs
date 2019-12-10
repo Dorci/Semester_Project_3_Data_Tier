@@ -17,9 +17,9 @@ namespace Tier3v4
 
         }
 
-        public Microsoft.EntityFrameworkCore.DbSet<User> users { get; set; }
-        public Microsoft.EntityFrameworkCore.DbSet<Event> events { get; set; }
-        public Microsoft.EntityFrameworkCore.DbSet<Address> addresses { get; set; }
+        public Microsoft.EntityFrameworkCore.DbSet<User> Users { get; set; }
+        public Microsoft.EntityFrameworkCore.DbSet<Event> Events { get; set; }
+        public Microsoft.EntityFrameworkCore.DbSet<Address> Addresses { get; set; }
 
     }
 }
