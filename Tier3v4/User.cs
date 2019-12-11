@@ -17,5 +17,10 @@ namespace Tier3v4
         public string email { get; set; }
         public DateTime dob { get; set; }
         public string password { get; set; }
+
+        public override string ToString()
+        {
+            return $"{nameof(userID)}: {userID}, {nameof(fName)}: {fName}, {nameof(lName)}: {lName}, {nameof(email)}: {email}, {nameof(dob)}: {dob}, {nameof(password)}: {password}";
+        }
     }
 }
