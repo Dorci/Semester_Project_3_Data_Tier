@@ -1,74 +1,93 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Tier3v4;
 
 namespace Tier3v4.Controllers
 {
-    [Route("api/Users")]
+    [Route("api/users")]
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly Database data;
+        private readonly Database _data;
 
         public UsersController(Database context)
         {
-            data = context;
+            _data = context;
         }
 
         // GET: api/Users
-        [HttpGet]
+        [HttpGet("allUsers")]
         public async Task<ActionResult<IEnumerable<User>>> Getusers()
         {
-            return await data.Users.ToListAsync();
+            return await _data.Users.ToListAsync();
         }
 
         // GET: api/Users/5
-        [HttpGet("{id}")]
+        [HttpGet("userID")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
-            var user = await data.Users.FindAsync(id);
+            var user = await _data.Users.FindAsync(id);
 
             if (user == null)
             {
                 return NotFound();
             }
 
-            return user;
-        }
-        [HttpGet("{email}")]
-        public async Task<ActionResult<User>> GetUser(string email)
-        {
-            var user = await data.Users.FindAsync(email);
-            if (user == null)
-            {
-                return NotFound();
-
-
-            }
             return user;
         }
         //[HttpGet("{email}")]
-        //public async Task<ActionResult<User>> GetUserId(string email)
+        //public async Task<ActionResult<User>> GetUser(string email)
         //{
-        //    var user = data.Users.Where(u => u.Equals(email)).Select(s=>s.userID);
-
-        //    if(email == null)
+        //    var user = await data.Users.FindAsync(email);
+        //    if (user == null)
         //    {
         //        return NotFound();
-        //    }
-            
-        //    return (User)user;
 
+
+        //    }
+        //    return user;
         //}
+        [HttpGet("user")]
+        public async Task<ActionResult<int>> GetUserId(string email)
+        {
+            var userId = _data.Users
+                .Where(u => u.email.Equals(email)).Select(s => s.userID);
+
+            if (email == null)
+            {
+                return NotFound();
+            }
+
+            return userId.ToList()[0];
+
+        }
 
         // PUT: api/Users/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
+
+        [HttpPost("login")]
+        public async Task<ActionResult<int>> LoginUser(string email, string password)
+        {
+            var check = await _data.Users.FirstAsync(p => p.email.Equals(email));
+            if (check == null)
+            {
+                return NotFound();
+            }
+
+            if (!check.password.Equals(password))
+            {
+                return BadRequest();
+            }
+
+            return check.userID;
+        }
+
+
+
+
         [HttpPut("{i}")]
         public async Task<IActionResult> PutUser(int id, User user)
         {
@@ -77,11 +96,11 @@ namespace Tier3v4.Controllers
                 return BadRequest();
             }
 
-            data.Entry(user).State = EntityState.Modified;
+            _data.Entry(user).State = EntityState.Modified;
 
             try
             {
-                await data.SaveChangesAsync();
+                await _data.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -109,11 +128,11 @@ namespace Tier3v4.Controllers
                 return BadRequest();
             }
 
-            data.Entry(user).State = EntityState.Modified;
+            _data.Entry(user).State = EntityState.Modified;
 
             try
             {
-                await data.SaveChangesAsync();
+                await _data.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -136,37 +155,37 @@ namespace Tier3v4.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
-            data.Users.Add(user);
-            await data.SaveChangesAsync();
+            _data.Users.Add(user);
+            await _data.SaveChangesAsync();
 
             return CreatedAtAction("GetUser", new { id = user.userID }, user);
         }
-        
 
-        
+
+
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<User>> DeleteUser(int id)
         {
-            var user = await data.Users.FindAsync(id);
+            var user = await _data.Users.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
             }
 
-            data.Users.Remove(user);
-            await data.SaveChangesAsync();
+            _data.Users.Remove(user);
+            await _data.SaveChangesAsync();
 
             return user;
         }
 
         private bool UserExists(int id)
         {
-            return data.Users.Any(e => e.userID == id);
+            return _data.Users.Any(e => e.userID == id);
         }
         private bool EmailExists(string email)
         {
-            return data.Users.Any(e =>e.email == email);
+            return _data.Users.Any(e => e.email == email);
         }
     }
 }
