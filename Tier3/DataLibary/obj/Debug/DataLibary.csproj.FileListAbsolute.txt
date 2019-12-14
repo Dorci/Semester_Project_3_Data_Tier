@@ -1,0 +1,17 @@
+C:\Users\tamas\source\repos\Tier3\DataLibary\bin\Debug\DataLibary.dll
+C:\Users\tamas\source\repos\Tier3\DataLibary\bin\Debug\DataLibary.pdb
+C:\Users\tamas\source\repos\Tier3\DataLibary\bin\Debug\Dapper.dll
+C:\Users\tamas\source\repos\Tier3\DataLibary\bin\Debug\Dapper.xml
+C:\Users\tamas\source\repos\Tier3\DataLibary\obj\Debug\DataLibary.csprojAssemblyReference.cache
+C:\Users\tamas\source\repos\Tier3\DataLibary\obj\Debug\DataLibary.csproj.CoreCompileInputs.cache
+C:\Users\tamas\source\repos\Tier3\DataLibary\obj\Debug\DataLibary.csproj.CopyComplete
+C:\Users\tamas\source\repos\Tier3\DataLibary\obj\Debug\DataLibary.dll
+C:\Users\tamas\source\repos\Tier3\DataLibary\obj\Debug\DataLibary.pdb
+D:\Tier3\DataLibary\bin\Debug\DataLibary.dll
+D:\Tier3\DataLibary\bin\Debug\DataLibary.pdb
+D:\Tier3\DataLibary\bin\Debug\Dapper.dll
+D:\Tier3\DataLibary\bin\Debug\Dapper.xml
+D:\Tier3\DataLibary\obj\Debug\DataLibary.csprojAssemblyReference.cache
+D:\Tier3\DataLibary\obj\Debug\DataLibary.csproj.CopyComplete
+D:\Tier3\DataLibary\obj\Debug\DataLibary.dll
+D:\Tier3\DataLibary\obj\Debug\DataLibary.pdb

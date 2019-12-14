@@ -1,0 +1,62 @@
+﻿@model IEnumerable<SEP3.Models.UserModel>
+
+@{
+    ViewBag.Title = "View Users";
+}
+
+<h2>ViewUsers</h2>
+
+<p>
+    @Html.ActionLink("Create New", "SignUp")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        
+        <th></th>
+    </tr>
+
+
+   @{ 
+       var users = ViewData["Users"];
+   }
+
+
+
+@foreach (var item in (IEnumerable<SEP3.Models.UserModel>)users) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+    </tr>
+}
+
+</table>
