@@ -31,7 +31,7 @@ namespace Tier3.Migrations
                     Block = table.Column<string>(nullable: true),
                     Flat = table.Column<string>(nullable: true),
                     BuildingNo = table.Column<int>(nullable: false),
-                    CityId = table.Column<int>(nullable: true)
+                    CityId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -41,7 +41,7 @@ namespace Tier3.Migrations
                         column: x => x.CityId,
                         principalTable: "Cities",
                         principalColumn: "CityId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -64,7 +64,7 @@ namespace Tier3.Migrations
                     MainCourse = table.Column<string>(nullable: true),
                     Dessert = table.Column<string>(nullable: true),
                     DateOfEvent = table.Column<string>(nullable: true),
-                    AddressId = table.Column<int>(nullable: true)
+                    AddressId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -74,7 +74,7 @@ namespace Tier3.Migrations
                         column: x => x.AddressId,
                         principalTable: "Addresses",
                         principalColumn: "AddressId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

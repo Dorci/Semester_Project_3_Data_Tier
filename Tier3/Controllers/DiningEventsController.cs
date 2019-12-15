@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 using Tier3.Models;
 
 namespace Tier3.Controllers
@@ -22,11 +23,14 @@ namespace Tier3.Controllers
 
         // GET: api/DiningEvents
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<DiningEvent>>> GetDiningEvents()
+        public async Task<ActionResult<List<DiningEvent>>> GetDiningEvents()
         {
-            
-            return await _context.DiningEvents.ToListAsync();
-            
+            // Return whole hierarchy
+            // TODO: Read this :)
+            return await _context.DiningEvents
+                .Include(a => a.Address)
+                    .ThenInclude(city => city.City)
+                .ToListAsync();
         }
 
         // GET: api/DiningEvents/5

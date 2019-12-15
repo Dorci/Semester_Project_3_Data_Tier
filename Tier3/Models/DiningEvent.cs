@@ -29,6 +29,8 @@ namespace Tier3.Models
         public string MainCourse { get; set; }
         public string Dessert { get; set; }
         public string DateOfEvent { get; set; }
+        
+        public int AddressId { get; set; }
         public Address Address { get; set; }
 
         public override string ToString()

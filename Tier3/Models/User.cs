@@ -11,11 +11,11 @@ namespace Tier3.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int UserID { get; set; }
+        public int UserId { get; set; }
         public string FName  { get; set; }
         public string LName { get; set; }
         public string Email { get; set; }
-        public DateTime Dob { get; set; }
+        public string Dob { get; set; }
         public string Password { get; set; }
         
 

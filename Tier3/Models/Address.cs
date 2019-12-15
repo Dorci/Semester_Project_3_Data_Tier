@@ -18,10 +18,11 @@ namespace Tier3.Models
         public string Block { get; set; }
         public string Flat { get; set; }
         public int BuildingNo { get; set; }
-//        [ForeignKey("City")]
+        public int CityId { get; set; }
         public City City { get; set; }
+        
 
-        public override string ToString()
+            public override string ToString()
         {
             return $"{nameof(AddressId)}: {AddressId}, {nameof(StreetName)}: {StreetName}, {nameof(Floor)}: {Floor}, {nameof(Block)}: {Block}, {nameof(Flat)}: {Flat}, {nameof(BuildingNo)}: {BuildingNo}, {nameof(City)}: {City}";
         }
