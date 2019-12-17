@@ -11,11 +11,12 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
         <e p="DiningEventsController.cs" t="Include" />
+        <e p="UsersController.cs" t="Include" />
       </e>
       <e p="EventList.db" t="Include" />
       <e p="Migrations" t="Include">
-        <e p="20191215024905_InitialCreate.cs" t="Include" />
-        <e p="20191215024905_InitialCreate.Designer.cs" t="Include" />
+        <e p="20191215214853_InitialCreate.cs" t="Include" />
+        <e p="20191215214853_InitialCreate.Designer.cs" t="Include" />
         <e p="DiningEventContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
@@ -39,6 +40,10 @@
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
         <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="Socket" t="Include">
+        <e p="Login.cs" t="Include" />
+        <e p="SocketListener.cs" t="Include" />
       </e>
       <e p="Startup.cs" t="Include" />
       <e p="Tier3.csproj" t="IncludeRecursive" />

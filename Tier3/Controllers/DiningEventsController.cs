@@ -109,7 +109,48 @@ namespace Tier3.Controllers
 
             return diningEvent;
         }
+        
+        
+        
+        [HttpGet("search")]
+        public async Task<ActionResult<List<DiningEvent>>> SearchEventsByCity(String city)
+        {
+            // Return whole hierarchy
+            // TODO: Read this :)
+            return await _context.DiningEvents
+                .Include(a => a.Address)
+                    .ThenInclude(a => a.City)
+                .Where(b => b.Address.City.CityName.Contains(city))
+                .ToListAsync();
+        }
+        
+        
+        
+        
+        [HttpGet("eventsId")]
+        public async Task<ActionResult<List<DiningEvent>>> getEventsById(int eventId)
+        {
+            // Return whole hierarchy
+            // TODO: Read this :)
+            return await _context.DiningEvents
+                .Include(a=> a.Address)
+                    .ThenInclude(b=> b.City)
+                .Where(d => d.EventId.Equals(eventId)).ToListAsync();
+        }
 
+        [HttpGet("events")]
+        public async Task<ActionResult<List<DiningEvent>>> getAllEvents()
+        {
+            // Return whole hierarchy
+            // TODO: Read this :)
+            return await _context.DiningEvents
+                .Include(a=> a.Address)
+                .ThenInclude(b=> b.City)
+                .ToListAsync();
+        }
+
+        
+        
         private bool DiningEventExists(int id)
         {
             return _context.DiningEvents.Any(e => e.EventId == id);

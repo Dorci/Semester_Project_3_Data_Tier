@@ -10,58 +10,248 @@
     <collation id="3" parent="1" name="BINARY"/>
     <collation id="4" parent="1" name="NOCASE"/>
     <collation id="5" parent="1" name="RTRIM"/>
-    <table id="6" parent="2" name="__EFMigrationsHistory"/>
-    <table id="7" parent="2" name="sqlite_master">
+    <table id="6" parent="2" name="Addresses"/>
+    <table id="7" parent="2" name="Cities"/>
+    <table id="8" parent="2" name="DiningEvents"/>
+    <table id="9" parent="2" name="User"/>
+    <table id="10" parent="2" name="__EFMigrationsHistory"/>
+    <table id="11" parent="2" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="8" parent="2" name="sqlite_sequence">
+    <table id="12" parent="2" name="sqlite_sequence">
       <System>1</System>
     </table>
-    <column id="9" parent="6" name="MigrationId">
+    <column id="13" parent="6" name="AddressId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="14" parent="6" name="StreetName">
+      <Position>2</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="15" parent="6" name="Floor">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="6" name="Block">
+      <Position>4</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="17" parent="6" name="Flat">
+      <Position>5</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="18" parent="6" name="BuildingNo">
+      <Position>6</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="6" name="CityId">
+      <Position>7</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="20" parent="6" name="IX_Addresses_CityId">
+      <ColNames>CityId</ColNames>
+      <ColumnCollations></ColumnCollations>
+    </index>
+    <key id="21" parent="6" name="PK_Addresses">
+      <ColNames>AddressId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="22" parent="6" name="FK_Addresses_Cities_CityId">
+      <ColNames>CityId</ColNames>
+      <RefTableName>Cities</RefTableName>
+      <RefKeyName>PK_Cities</RefKeyName>
+      <RefColNames>CityId</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="23" parent="7" name="CityId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="7" name="CityName">
+      <Position>2</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="25" parent="7" name="PostalCode">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="26" parent="7" name="PK_Cities">
+      <ColNames>CityId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="27" parent="8" name="EventId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="28" parent="8" name="UserId">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="8" name="AlcoholicDrink">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="8" name="StartTime">
+      <Position>4</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="31" parent="8" name="EndTime">
+      <Position>5</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="32" parent="8" name="Description">
+      <Position>6</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="33" parent="8" name="AgeLimit">
+      <Position>7</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="8" name="Pets">
+      <Position>8</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="8" name="Entertainment">
+      <Position>9</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="8" name="MaxNoOfGuests">
+      <Position>10</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="8" name="EntryFee">
+      <Position>11</Position>
+      <DataType>REAL|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="8" name="Starter">
+      <Position>12</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="39" parent="8" name="MainCourse">
+      <Position>13</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="40" parent="8" name="Dessert">
+      <Position>14</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="41" parent="8" name="DateOfEvent">
+      <Position>15</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="42" parent="8" name="AddressId">
+      <Position>16</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="43" parent="8" name="IX_DiningEvents_AddressId">
+      <ColNames>AddressId</ColNames>
+      <ColumnCollations></ColumnCollations>
+    </index>
+    <key id="44" parent="8" name="PK_DiningEvents">
+      <ColNames>EventId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="45" parent="8" name="FK_DiningEvents_Addresses_AddressId">
+      <ColNames>AddressId</ColNames>
+      <RefTableName>Addresses</RefTableName>
+      <RefKeyName>PK_Addresses</RefKeyName>
+      <RefColNames>AddressId</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="46" parent="9" name="UserId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="47" parent="9" name="FName">
+      <Position>2</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="48" parent="9" name="LName">
+      <Position>3</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="49" parent="9" name="Email">
+      <Position>4</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="50" parent="9" name="Dob">
+      <Position>5</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <column id="51" parent="9" name="Password">
+      <Position>6</Position>
+      <DataType>TEXT|0s</DataType>
+    </column>
+    <key id="52" parent="9" name="PK_User">
+      <ColNames>UserId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="53" parent="10" name="MigrationId">
       <Position>1</Position>
       <DataType>TEXT|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="10" parent="6" name="ProductVersion">
+    <column id="54" parent="10" name="ProductVersion">
       <Position>2</Position>
       <DataType>TEXT|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="11" parent="6" name="sqlite_autoindex___EFMigrationsHistory_1">
+    <index id="55" parent="10" name="sqlite_autoindex___EFMigrationsHistory_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>MigrationId</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="12" parent="6" name="PK___EFMigrationsHistory">
+    <key id="56" parent="10" name="PK___EFMigrationsHistory">
       <ColNames>MigrationId</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex___EFMigrationsHistory_1</UnderlyingIndexName>
     </key>
-    <column id="13" parent="7" name="type">
+    <column id="57" parent="11" name="type">
       <Position>1</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="14" parent="7" name="name">
+    <column id="58" parent="11" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="15" parent="7" name="tbl_name">
+    <column id="59" parent="11" name="tbl_name">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="16" parent="7" name="rootpage">
+    <column id="60" parent="11" name="rootpage">
       <Position>4</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="17" parent="7" name="sql">
+    <column id="61" parent="11" name="sql">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="18" parent="8" name="name">
+    <column id="62" parent="12" name="name">
       <Position>1</Position>
     </column>
-    <column id="19" parent="8" name="seq">
+    <column id="63" parent="12" name="seq">
       <Position>2</Position>
     </column>
   </database-model>

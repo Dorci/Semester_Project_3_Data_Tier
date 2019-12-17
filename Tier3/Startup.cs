@@ -27,6 +27,7 @@ namespace Tier3
         {
             services.AddDbContext<DiningEventContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("Database")));
 
+
             services.AddControllers();
 
         }
@@ -50,5 +51,7 @@ namespace Tier3
                 endpoints.MapControllers();
             });
         }
+        
+        
     }
 }

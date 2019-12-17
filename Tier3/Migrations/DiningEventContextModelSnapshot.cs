@@ -121,6 +121,32 @@ namespace Tier3.Migrations
                     b.ToTable("DiningEvents");
                 });
 
+            modelBuilder.Entity("Tier3.Models.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Dob")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("User");
+                });
+
             modelBuilder.Entity("Tier3.Models.Address", b =>
                 {
                     b.HasOne("Tier3.Models.City", "City")

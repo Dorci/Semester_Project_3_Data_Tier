@@ -8,7 +8,7 @@ using Tier3.Models;
 namespace Tier3.Migrations
 {
     [DbContext(typeof(DiningEventContext))]
-    [Migration("20191215024905_InitialCreate")]
+    [Migration("20191215214853_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -121,6 +121,32 @@ namespace Tier3.Migrations
                     b.HasIndex("AddressId");
 
                     b.ToTable("DiningEvents");
+                });
+
+            modelBuilder.Entity("Tier3.Models.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Dob")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("Tier3.Models.Address", b =>
