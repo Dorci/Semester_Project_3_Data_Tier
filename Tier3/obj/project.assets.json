@@ -8555,11 +8555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EFcoreStuff\\Tier3\\Tier3.csproj",
+      "projectUniqueName": "D:\\SEP3\\sep3-t3\\Tier3\\Tier3.csproj",
       "projectName": "Tier3",
-      "projectPath": "D:\\EFcoreStuff\\Tier3\\Tier3.csproj",
+      "projectPath": "D:\\SEP3\\sep3-t3\\Tier3\\Tier3.csproj",
       "packagesPath": "C:\\Users\\fiona\\.nuget\\packages\\",
-      "outputPath": "D:\\EFcoreStuff\\Tier3\\obj\\",
+      "outputPath": "D:\\SEP3\\sep3-t3\\Tier3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8625,7 +8625,16 @@
           "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
